@@ -28,7 +28,7 @@ console.log(arr,"arr")
 
 //Optimal approch
 
-// second_largest=arr[0]
+// second_largest=-1
 // larget=arr[0]
 // for(i=0;i<arr.length;i++){
 //     if(second_largest<arr[i]){
@@ -41,3 +41,7 @@ console.log(arr,"arr")
 //     }
 // }
 // console.log(second_largest,"dfsf")
+let largest = Number.MIN_SAFE_INTEGER;
+console.log(largest)
+
+console.log(Math.max(...arr))

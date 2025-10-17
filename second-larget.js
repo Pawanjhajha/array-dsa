@@ -41,3 +41,7 @@ console.log(arr,"arr")
 //     }
 // }
 // console.log(second_largest,"dfsf")
+let largest = Number.MIN_SAFE_INTEGER;
+console.log(largest)
+
+console.log(Math.max(...arr))

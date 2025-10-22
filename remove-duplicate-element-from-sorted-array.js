@@ -39,4 +39,4 @@ console.log(i,"index",arr)
 
 //t.c O(N-1)
 //enable debugger in in the vs code Ctrl + Shift + D
-//s.c= O(1)
+//s.c= O(1)   

@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}/larget-element.js"
+            "program": "${workspaceFolder}/remove-duplicate-element-from-sorted-array.js"
         }
     ]
 }

@@ -28,7 +28,6 @@ for(let i=0;i<arr.length;i++){
         tem.push(arr[i])
     }
 }
-console.log(tem,"tem")
 for(let i=0;i<tem.length;i++){
     arr[i]=tem[i]
 }

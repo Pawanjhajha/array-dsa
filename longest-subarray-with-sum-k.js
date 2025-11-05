@@ -30,3 +30,4 @@ for(let i=0;i<arr.length;i++){
     }
 }
 console.log(longest,"longest") 
+//T.C = O(n*n) nPower 2

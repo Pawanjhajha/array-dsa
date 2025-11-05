@@ -17,19 +17,35 @@ target=14
 //T.C O(n*N)  n power 2
 //better approch
 
-let map=new Map()
-for(let i=0;i<arr.length;i++){
-    map.set(arr[i],i)
-}
+// let map=new Map()
+// for(let i=0;i<arr.length;i++){
+//     map.set(arr[i],i)
+// }
 
-console.log(map)
-for(let i=0;i<arr.length;i++){
-    findelm=target-arr[i]
-    if(map.has(findelm)){
-        index=map.get(findelm)
-        console.log( [index,i],"index")//index
-        console.log(findelm,arr[i],"element")
+// console.log(map)
+// for(let i=0;i<arr.length;i++){
+//     findelm=target-arr[i]
+//     if(map.has(findelm)){
+//         index=map.get(findelm)
+//         console.log( [index,i],"index")//index
+//         console.log(findelm,arr[i],"element")
+//         break
+//     }
+// }
+
+//T.C O(n)+O(N)
+
+//optimal approch
+arr.sort((a,b)=>a-b)
+let left=0
+let right=arr.length-1
+while(left <right){
+    console.log(arr[left]+arr[right])
+    sum=arr[left]+arr[right]
+    if(target == sum){
+        console.log(left,right)
         break
     }
+    if (sum < target) left++;
+    else right--;
 }
-
